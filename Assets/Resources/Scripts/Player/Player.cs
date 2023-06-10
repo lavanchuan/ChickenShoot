@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
                 beingTreatedTimer = 0;
                 beingTreated = false;
                 GetComponent<BoxCollider2D>().isTrigger = false;
-                GetComponent<SpriteRenderer>().color = Color.red;
+                GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
             }
         }
     }

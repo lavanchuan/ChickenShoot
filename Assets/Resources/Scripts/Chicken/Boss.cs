@@ -64,9 +64,7 @@ public class Boss : MonoBehaviour
     public void BossDie(){
         Debug.Log("BOSS DIE");
         GetComponent<BoxCollider2D>().isTrigger = true;
-        if(++space.bossLevel > Boss.MAX_LEVEL){
-            space.bossLevel = Boss.MAX_LEVEL;
-        }
+        space.IncreaseBossLevel();
 
         GetComponent<DropItem>().DropItemObjects();
 

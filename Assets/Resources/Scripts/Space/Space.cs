@@ -107,7 +107,7 @@ public class Space : MonoBehaviour
         GameObject chicken = (GameObject)Instantiate(Resources.Load("Prefabs/Chicken/" + nameChickenPrefabs));
         chicken.transform.localPosition = startPos;
         chicken.GetComponent<ChickenFly>().endPos = endPos;
-        chicken.GetComponent<Chicken>().health = Chicken.HEALTH_BASIC * level * (long)Math.Pow(10, 2 + level / 3);
+        chicken.GetComponent<Chicken>().health = Chicken.HEALTH_BASIC * (long)Math.Pow(10, 2 + level / 3);
         chicken.GetComponent<Chicken>().score = chicken.GetComponent<Chicken>().health;
         return chicken;
     }
@@ -119,7 +119,7 @@ public class Space : MonoBehaviour
         Boss boss = ((GameObject)Instantiate(Resources
         .Load("Prefabs/Chicken/" + nameBossPrefabs))).GetComponent<Boss>();
         boss.transform.localPosition = new Vector2(0, 10);
-        boss.health = 5 * level * (long)Math.Pow(10, level+2);
+        boss.health = 5 * (long)Math.Pow(10, level + 5);
         return boss;
     }
 
@@ -237,6 +237,25 @@ public class Space : MonoBehaviour
     public void DecreaseSumChickenInvader(){
         if(--this.sumChickenInvader < 0) this.sumChickenInvader = 0;
     }
+
+    bool upgradedBoss;
+    
+    public void IncreaseBossLevel(){
+        if(!upgradedBoss){
+            StartCoroutine(EffectUpgradeBoss());
+            if(++bossLevel > Boss.MAX_LEVEL){
+                bossLevel = Boss.MAX_LEVEL;
+            }
+        }
+    }
+
+    IEnumerator EffectUpgradeBoss(){
+        upgradedBoss = true;
+        yield return new WaitForSeconds(deltaTimeNextChicken / 2);
+        upgradedBoss = false;
+    }
+
+
 
 
 }
