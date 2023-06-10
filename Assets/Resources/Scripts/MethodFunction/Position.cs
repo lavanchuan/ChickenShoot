@@ -12,4 +12,11 @@ public class Position{
             * Camera.main.ScreenToWorldPoint(new Vector2(distance, 0)).x;
         return new Vector2(x, y);
     }
+
+    public static Vector2 GetRandomRelativePosition(){
+        float y = Camera.main.ScreenToWorldPoint(new Vector2(0, 
+            UnityEngine.Random.Range(GameSetting.HEIGHT/2, GameSetting.HEIGHT))).y;
+        return GetRandomRelativePosition(y);
+    }
+
 }

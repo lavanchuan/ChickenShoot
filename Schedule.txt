@@ -1,0 +1,15 @@
+01/06/2023
+- UI Health point
+- Coin prefabs
+- Drop item for rock object
+- Pickup item for player (coin)
+- UI Coin picked
+- Bullet quantity
+- Bullet 1-n
+- Pickup bullet and upgrade bullet quantity
+- UI bullet quantity
+- Rate and drop rate item object
+04/06/2023
+- Apply image
+- 
+

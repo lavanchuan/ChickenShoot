@@ -36,20 +36,55 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resources\Scripts\UI\UI_Controller.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\Timer.cs" />
+     <Compile Include="Assets\Resources\Scripts\DropItem\DropItemByObjects.cs" />
+     <Compile Include="Assets\Resources\Scripts\ItemObjects\Coin.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\DropRate.cs" />
+     <Compile Include="Assets\Resources\Scripts\Test\TargetTest.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\AnimatorController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Test\RotationTest.cs" />
+     <Compile Include="Assets\Resources\Scripts\ItemObjects\UpgradeBulletQuantity.cs" />
+     <Compile Include="Assets\Resources\Scripts\AnimationHandler\AnimationHandler.cs" />
      <Compile Include="Assets\Resources\Scripts\Bullet\Shoot.cs" />
+     <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\AndroidController.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\TimeFormat.cs" />
      <Compile Include="Assets\Resources\Scripts\DebugSizeDevice.cs" />
      <Compile Include="Assets\Resources\Scripts\Objects\MayBeBroken.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\Controller.cs" />
+     <Compile Include="Assets\Resources\Scripts\Skill\BossSkill.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\ConvertSize.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\ButtonPauseGame.cs" />
+     <Compile Include="Assets\Resources\Scripts\Skill\SpaceshipSkill.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\StringFunction.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\Models\ChickenMap.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\ScoreNumber.cs" />
+     <Compile Include="Assets\Resources\Scripts\ItemObjects\Falling.cs" />
+     <Compile Include="Assets\Resources\Scripts\Controller\TouchCheck.cs" />
+     <Compile Include="Assets\Resources\Prefabs\MainMenu\MainMenu.cs" />
+     <Compile Include="Assets\Resources\Scripts\Objects\MayDropItem.cs" />
      <Compile Include="Assets\Resources\Scripts\Bullet\Bullet.cs" />
+     <Compile Include="Assets\Resources\Scripts\Chicken\Chicken.cs" />
+     <Compile Include="Assets\Resources\Scripts\DropItem\DropItem.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\DesktopController.cs" />
-     <Compile Include="Assets\Resources\Scripts\Objects\Rock.cs" />
-     <Compile Include="Assets\Resources\Scripts\GameSetting.cs" />
-     <Compile Include="Assets\Resources\Scripts\MethodFunction\Position.cs" />
-     <Compile Include="Assets\Resources\Scripts\Space\Space.cs" />
-     <Compile Include="Assets\Resources\Scripts\Controller\TouchCheck.cs" />
+     <Compile Include="Assets\Resources\Scripts\DropItem\DropItemByBoss.cs" />
      <Compile Include="Assets\Resources\Scripts\CollisionWithPlayer\AttackPlayer.cs" />
+     <Compile Include="Assets\Resources\Scripts\Objects\Rock.cs" />
+     <Compile Include="Assets\Resources\Scripts\CollisionWithPlayer\BeingAttackByBullet.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\Models\GameDefine.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\Models\Rate.cs" />
+     <Compile Include="Assets\Resources\Scripts\DropItem\DropItemByChicken.cs" />
+     <Compile Include="Assets\Resources\Scripts\GameSetting.cs" />
+     <Compile Include="Assets\Resources\Scripts\Chicken\Boss.cs" />
+     <Compile Include="Assets\Resources\Scripts\Player\PickupItem.cs" />
+     <Compile Include="Assets\Resources\Scripts\Skill\ChickenSkill.cs" />
+     <Compile Include="Assets\Resources\Scripts\MethodFunction\Position.cs" />
+     <Compile Include="Assets\Resources\Scripts\FlyDirect\ChickenFly.cs" />
+     <Compile Include="Assets\Resources\Scripts\Space\Space.cs" />
+     <Compile Include="Assets\Resources\Scripts\ItemObjects\ListItemObjects.cs" />
+     <Compile Include="Assets\Resources\Scripts\UI\UI_SettingController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Hud\Editor\2020.3.45f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
