@@ -21,6 +21,7 @@ ScriptsOnlyBuild:
     - DropItemByChicken
     - DropItemByObjects
     - Falling
+    - Food
     - GameManager
     - MainMenu
     - MayBeBroken
@@ -41,8 +42,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -56,10 +55,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -86,6 +83,8 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
@@ -176,15 +175,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5732}
     - Class: 114
-      Script: {instanceID: 5852}
+      Script: {instanceID: 5810}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5854}
     - Class: 114
-      Script: {instanceID: 6130}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6266}
+      Script: {instanceID: 6132}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 6268}
+    - Class: 114
+      Script: {instanceID: 6298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -267,11 +268,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4736}
     - Class: 114
-      Script: {instanceID: 5852}
+      Script: {instanceID: 5854}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 6298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1186,6 +1187,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Food
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
