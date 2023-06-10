@@ -79,13 +79,14 @@
      <Compile Include="Assets\Resources\Scripts\DropItem\DropItemByChicken.cs" />
      <Compile Include="Assets\Resources\Scripts\GameSetting.cs" />
      <Compile Include="Assets\Resources\Scripts\Chicken\Boss.cs" />
+     <Compile Include="Assets\Resources\Scripts\Background\Background.cs" />
      <Compile Include="Assets\Resources\Scripts\Player\PickupItem.cs" />
      <Compile Include="Assets\Resources\Scripts\Skill\ChickenSkill.cs" />
      <Compile Include="Assets\Resources\Scripts\MethodFunction\Position.cs" />
      <Compile Include="Assets\Resources\Scripts\FlyDirect\ChickenFly.cs" />
      <Compile Include="Assets\Resources\Scripts\Space\Space.cs" />
      <Compile Include="Assets\Resources\Scripts\ItemObjects\ListItemObjects.cs" />
-     <Compile Include="Assets\Resources\Scripts\Background\Background.cs" />
+     <Compile Include="Assets\Resources\Scripts\ItemObjects\Food.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Hud\Editor\2020.3.45f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

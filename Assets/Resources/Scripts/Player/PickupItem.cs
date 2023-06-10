@@ -28,6 +28,10 @@ public class PickupItem : MonoBehaviour
             } else if(collider.name.Contains(UpgradeBulletQuantity.NAME)){
                 GetComponent<Player>().IncreaseBulletQuantity(UpgradeBulletQuantity.bulletQuantity);
                 Destroy(collider.gameObject);
+            } else if(collider.name.Contains(Food.NAME)){
+                GameObject.FindGameObjectWithTag(Controller.TAG).GetComponent<ScoreNumber>()
+                .IncreaseScoreNumber(collider.gameObject.GetComponent<Food>().GetScore());
+                collider.GetComponent<Food>().DestroyObject();
             }
         }
     }

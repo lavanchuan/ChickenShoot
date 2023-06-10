@@ -12,6 +12,7 @@ public class Boss : MonoBehaviour
     public long health;
 
     Space space;
+    ScoreNumber scoreNumber;
 
     Controller controller;
 
@@ -23,6 +24,8 @@ public class Boss : MonoBehaviour
         controller = GameObject.FindGameObjectWithTag(Controller.TAG).GetComponent<Controller>();
 
         space = GameObject.FindGameObjectWithTag(Space.TAG).GetComponent<Space>();
+
+        scoreNumber = GameObject.FindGameObjectWithTag(Controller.TAG).GetComponent<ScoreNumber>();
 
         // GetComponent<BoxCollider2D>().isTrigger = true;
         GetComponent<BoxCollider2D>().enabled = false;
@@ -65,6 +68,8 @@ public class Boss : MonoBehaviour
         Debug.Log("BOSS DIE");
         GetComponent<BoxCollider2D>().isTrigger = true;
         space.IncreaseBossLevel();
+        // increase score number
+        scoreNumber.IncreaseScoreNumber(health);
 
         GetComponent<DropItem>().DropItemObjects();
 
