@@ -55,6 +55,7 @@
      <Compile Include="Assets\Resources\Scripts\Controller\Controller.cs" />
      <Compile Include="Assets\Resources\Scripts\Skill\BossSkill.cs" />
      <Compile Include="Assets\Resources\Scripts\MethodFunction\ConvertSize.cs" />
+     <Compile Include="Assets\Resources\Scripts\UI\UI_SettingController.cs" />
      <Compile Include="Assets\Resources\Scripts\Controller\ButtonPauseGame.cs" />
      <Compile Include="Assets\Resources\Scripts\Skill\SpaceshipSkill.cs" />
      <Compile Include="Assets\Resources\Scripts\MethodFunction\StringFunction.cs" />
@@ -84,7 +85,7 @@
      <Compile Include="Assets\Resources\Scripts\FlyDirect\ChickenFly.cs" />
      <Compile Include="Assets\Resources\Scripts\Space\Space.cs" />
      <Compile Include="Assets\Resources\Scripts\ItemObjects\ListItemObjects.cs" />
-     <Compile Include="Assets\Resources\Scripts\UI\UI_SettingController.cs" />
+     <Compile Include="Assets\Resources\Scripts\Background\Background.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Hud\Editor\2020.3.45f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

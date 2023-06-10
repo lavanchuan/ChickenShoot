@@ -11,5 +11,7 @@
 - Rate and drop rate item object
 04/06/2023
 - Apply image
-- 
+10/06/2023
+- Balance health and damage
+
 

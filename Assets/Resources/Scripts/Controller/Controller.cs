@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Controller : MonoBehaviour {
     
-    public GameObject playerGO;
     Player player;
     GameObject touchCheck = null;
     public static readonly string TAG = "GameController";
@@ -19,7 +18,7 @@ public class Controller : MonoBehaviour {
     private void Start() {
         gameState = GameDefine.GameState.PLAY;
 
-        player = playerGO.GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag(Player.TAG).GetComponent<Player>();
 
         btnPause = GameObject.FindGameObjectWithTag(ButtonPauseGame.TAG).GetComponent<ButtonPauseGame>();
     }

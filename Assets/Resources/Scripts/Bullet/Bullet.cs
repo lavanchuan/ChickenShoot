@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
         player = GameObject.FindGameObjectWithTag(Player.TAG).GetComponent<Player>();
         hardLevel = player.GetBulletLevel();
 
-        damage = 5 * hardLevel * (long)Math.Pow(10, hardLevel/3);
+        damage = 5 * hardLevel * (long)Math.Pow(10, 1 + hardLevel/2);
     }
     private void Update() {
         if(controller.gameState != GameDefine.GameState.PLAY){
